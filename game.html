@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html onclick="jump()" id="myweb">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>attaking fish game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='game.css'>
+</head>
+<body>
+    
+    <a href="game.html"><button id="easy">easy</button></a>
+    <a href="attacking fish game -normal.html"><button id="normal">normal</button></a>
+    <a href="attacking fish game-hard.html"><button id="hard">hard</button></a>
+    <h1 id="counter">0</h1>
+    <h1 id="title">ملاحظات</h1>
+    <p> .عندما تختفي السمكة هذا يعني انها ستسرع<br> .يمكنك ايقاف اللعبة لثلاث  مرات فقط</p>
+    <button id="pause" onclick="pause()">pause</button>
+    <div id="game">
+        <div id="sky">
+            <img width="170px" height="100px" src="http://www.pngall.com/wp-content/uploads/2016/03/Cloud-PNG-5.png" alt="clouds">
+            <img width="170px" height="100px" src="http://www.pngall.com/wp-content/uploads/2016/03/Cloud-PNG-5.png" alt="clouds">
+            <img width="170px" height="100px" src="http://www.pngall.com/wp-content/uploads/2016/03/Cloud-PNG-5.png" alt="clouds">
+            <img width="170px" height="100px" src="http://www.pngall.com/wp-content/uploads/2016/03/Cloud-PNG-5.png" alt="clouds">
+        </div>
+        <div id="fish">
+            <img id="img2" src="http://cliparting.com/wp-content/uploads/2018/03/cartoon-fish-2018-27.png" alt="fish">
+        </div>
+
+        <div id="frog">
+            <img name="main_img" id="img1" src="https://www.freepngimg.com/thumb/frog/37257-1-frog-transparent-background.png" alt="frog">
+        </div>   
+    </div>
+
+    <div id="box_level">
+        <h1 id="level"><a href="attacking fish game -normal.html">NORMAL</a></h1>
+    </div>
+    <div id="imgs">
+        <img width="150px" src="https://www.pngall.com/wp-content/uploads/8/Green-Turtle-Transparent.png" onclick="main_img.src = this.src">
+        <img width="150px" src="https://www.freeiconspng.com/uploads/penguin-png-16.png" alt="penguin" onclick="main_img.src = this.src">
+    </div>
+
+    <script src='game.js'></script>
+
+</body>
+</html>
